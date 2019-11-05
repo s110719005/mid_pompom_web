@@ -1,4 +1,6 @@
 
+* { color:#fff; text-decoration: none;}
+
 html {
     width: 100%;
     height:100%;
@@ -11,6 +13,8 @@ body{
     
     background-color: #434343;
 }
+
+
 
 .top{
     position: absolute;
@@ -29,7 +33,7 @@ body{
     background-color: rgb(175, 65, 73);
     position: absolute;
     width:100%;
-    height:132px;
+    height:99px;
 }
 
 .top_text {
@@ -37,10 +41,10 @@ body{
     color:white;
     opacity:1;
     text-align: center;
-    font-size: 50px;
+    font-size: 37px;
     letter-spacing: 2px;
     position: relative;
-    top:30%;
+    top:23%;
 }
 
 
@@ -56,6 +60,76 @@ body{
     text-align: center;
 }
 
+.left_pattern2 {
+    position: absolute;
+    top:78%;
+    left:0%;
+    
+
+    background-color:rgb(175, 65, 73);
+    width:30%;
+    height:15%;
+    text-align: center;
+}
+
+.left_pattern3 {
+    position: absolute;
+    top:78%;
+    left:0%;
+    
+
+    background-color:rgb(175, 65, 73);
+    width:30%;
+    height:15%;
+    text-align: center;
+}
+
+.left_pattern4 {
+    position: absolute;
+    top:78%;
+    left:0%;
+    
+
+    background-color:rgb(175, 65, 73);
+    width:30%;
+    height:15%;
+    text-align: left;
+    
+    padding-left:3%;
+}
+
+.left_pattern5 {
+    position: absolute;
+    top:78%;
+    left:0%;
+    
+
+    background-color:rgb(175, 65, 73);
+    width:30%;
+    height:15%;
+    text-align: center;
+}
+
+.left_pattern_m{
+    position: absolute;
+    top:0%;
+    left:102%;
+
+    background-color:rgb(175, 65, 73);
+    width:3.75%;
+    height:100%;
+}
+
+.left_pattern_s{
+    position: absolute;
+    top:0%;
+    left:107.75%;
+
+    background-color:rgb(175, 65, 73);
+    width:2%;
+    height:100%;
+}
+
 .left_text {
     position: relative;
     top:40%;
@@ -63,7 +137,23 @@ body{
     z-index: 2;
     
     
-    font-size: 4vh;
+    font-size: 3vh;
+    
+    font-family:"Trajan Pro Regular";
+    color: white;
+    
+    padding:0px;
+    letter-spacing: 2px;
+}
+
+.left_text4 {
+    position: relative;
+    top:20%;
+    right:0%;
+    z-index: 2;
+    line-height: 5vh;
+    
+    font-size: 3vh;
     
     font-family:"Trajan Pro Regular";
     color: white;
@@ -83,30 +173,31 @@ body{
     background-color: #BDBDBD;
     opacity: 0.59;
 
-    width:132px;
-    height:1100px;
+    width:99px;
+    height:825px;
     
     
 }
 .right_text {
     position:absolute;
-    top:0px;
+    top:0;
     right:0;
     
     padding:0px;
     height:˙715px;
-    padding-top:385px;
+    padding-top:21%;
+    
 }
 
 
 .right_textli {
     list-style-type: none;
-    font-size:20px;
+    font-size:15px;
     width:44px;
     font-family:"Segoe UI Bold";
     color: white;
     position:relative;
-    margin: 50px 44px 50px 44px; 
+    margin: 37px 23px 37px 0px; 
     cursor: pointer; 
     
 }
@@ -118,7 +209,7 @@ body{
     left: 0;
     margin-top: calc(0.125em / 2 * -1);
     position: absolute;
-    right: 0;
+    right: 25%;
     top: 50%;
 }
 
@@ -129,7 +220,7 @@ body{
     left: 0;
     margin-top: calc(0.125em / 2 * -1);
     position: absolute;
-    right: 0;
+    right: 25%;
     top: 50%;
 }
 
@@ -139,6 +230,13 @@ body{
     -webkit-animation-name: fade;
     -webkit-animation-duration: 1.5s;
     animation-name: fade;
+    animation-duration: 3s;
+}
+
+.fade2 {
+    -webkit-animation-name: fade2;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade2;
     animation-duration: 3s;
 }
 
@@ -152,57 +250,53 @@ body{
     to {opacity: 1}
   }
 
+  @-webkit-keyframes fade2 {
+    from {
+        
+        opacity: 0} 
+    to {
+        opacity: 0.66}
+  }
+  
+  @keyframes fade2 {
+    from {
+        opacity: 0} 
+    to {
+        opacity: 0.66}
+  }
 
 
-.menu {
-    position: absolute;
-    right:0;
-    width:132px;
-    height:132px;
-    cursor: pointer;
-    z-index:4;
+
+
+
+
+
+
+
+
+/* Rotate first bar */
+.change .line1 {
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+  
+  /* Fade out the second bar */
+  .change .line2 {
+    opacity: 0;
+  }
+  .change .menu_text {
+    opacity: 0;
+  }
+  
+  /* Rotate last bar */
+  .change .line3 {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+.left_patternn{
+    display:none;
 }
-
-.line1{
-    position: absolute;
-    top:50.5px;
-    right:35.5px;
-
-    width:61px;
-    height:4px;
-   
-    background-color: #FFFFFF;
-}
-.line2{
-    position: absolute;
-    top:63.5px;
-    right:35.5px;
-
-    width:61px;
-    height:4px;
-
-    background-color: #FFFFFF;
-}
-
-.menu_text{
-    font-family: 'Segoe UI Bold Italic';
-    font-size:20px;
-
-    position: absolute;
-    top:70px;
-    padding: 0 36px 0 36px;
-    width:60px;
-    right:0px;
-    color: #FFFFFF;
-    line-height:35px;
-    text-align: center;
-    
-
-}
-
-
-
-
 
 .home_li {
     display:none;
@@ -210,7 +304,7 @@ body{
     top:0px;
     left:0px;
     width:100%;
-    height:1100px;
+    height:825px;
     z-index:-1;
     object-fit:cover;
 }
@@ -237,93 +331,120 @@ body{
 
 .footer_top{
     position: absolute;
-    top:1100px;
+    top:825px;
     left:0px;
     width:100%;
-    height:210px;
+    height:157.5px;
 
     background-color:#434343;
 }
-
 .footer_bottom{
     position: absolute;
-    top:1310px;
+    top:982.5px;
     left:0px;
     width:100%;
-    height:81px;
+    height:60.75px;
 
     background-color:#151515;
     text-align: center;
     color: white;
-    font-size:18px;
+    font-size:15px;
     padding-top: 27px;
     font-family:"Gill Sans MT";
     letter-spacing: 2px;
 }
-
-
 .footer_ul {
     position:absolute;
-    top:1194px;
+    top:900px;
     left:0px;
-
+    width:50%;
     width:50%;
     
     padding:0px;
-    height:˙715px;
-    padding-left:110px;
+    
+    text-align: center;
+}
+.footer_ul li{
+    margin-left:3%;
+    margin-right:3%;
 }
 
-.footer_li{
+.footer_li1{
     list-style-type: none;
-    font-size:18px;
+    font-size:2.3vh;
     display: inline-block;
     font-family:"Gill Sans MT Bold";
     
     letter-spacing:2px;
 
     color: white;
-    padding: 22.5px 3% 22.5px 3%;   
+    
+    cursor: pointer;  
+}
+.footer_li2{
+    list-style-type: none;
+    font-size:2.3vh;
+    display: inline-block;
+    font-family:"Gill Sans MT Bold";
+    
+    letter-spacing:2px;
+
+    color: white;
+    
+    cursor: pointer;  
+}
+.footer_li3{
+    list-style-type: none;
+    font-size:2.3vh;
+    display: inline-block;
+    font-family:"Gill Sans MT Bold";
+    
+    letter-spacing:2px;
+
+    color: white;
+    
+    cursor: pointer;   
+}
+.footer_li4{
+    list-style-type: none;
+    font-size:2.3vh;
+    display: inline-block;
+    font-family:"Gill Sans MT Bold";
+    
+    letter-spacing:2px;
+
+    color: white;
+    
+    cursor: pointer;  
 }
 
 .footer_text {
     position:absolute;
-    top:0px;
+    list-style-type: none;
+    display:flex;
+    padding:0;
+    top:825px;
     right:0;
     width:50%;
+    height:157.5px;
+    font-size: 1.5vh;
+    
 }
 
-.openhour {
-    position:absolute;
-    top:1135px;
-    left:0%;
+.footer_text li{
+    width:100%;
+    display:flex;
     
-    color: white;
-    font-family:"Gill Sans MT Bold";
-    letter-spacing:2px;
-
-    width:50%;
+    justify-content: left;
+    text-align: center;
+    align-items: center;
     
-    text-align: left;
 }
-.reservation {
-    position:absolute;
-    top:1135px;
-    left:50%;
-   
-    color: white;
-    font-family:"Gill Sans MT Bold";
-    letter-spacing:2px;
 
-    width:50%;
-    
-    text-align: left;
-}
 
 .open_ul{
-    position:absolute;
-    top:1160px;
-    left:0%;
+    position: relative;;
+    
    
     color: white;
     font-family:"Gill Sans MT Bold";
@@ -331,14 +452,13 @@ body{
     list-style-type: none;
     text-align: left;
     padding:0px;
-    width:50%;
+    
     
 }
 
 .reser_ul {
-    position:absolute;
-    top:1160px;
-    left:50%;
+    position:relative;
+    
    
     color: white;
     font-family:"Gill Sans MT Bold";
@@ -346,143 +466,28 @@ body{
     list-style-type: none;
     text-align: left;
     padding:0px;
-    width:50%;
+    
 }
 
 .open_li {
-    padding-top:4%;
-}
-
-
-
-.page_menu {
-    clip-path: circle(100px at 100% -20%);
-    -webkit-clip-path: circle(100px at 100% -20%);
-    transition: all 3s ease-out;
-    pointer-events: none;
-    
-    
-}
-
-.page_menu.open {
-    clip-path: circle(3000px at 100% -20%);
-    -webkit-clip-path: circle(3000px at 100% -20%);
-    pointer-events: all;
-    position: absolute;
-    z-index:3;
-}
-
-
-
-nav {
-    background:rgb(175, 65, 73);
-    height:100%;
+    margin:0;
+    padding-top:5%;
     width:100%;
-    position: absolute;
-    top:0%;
-    left:0%;
-    z-index:3;
-    
 }
 
-.nav-links {
-    display: flex;
-    width:92%;
-    height:80%;
-    
-    margin:0;
-    padding:0;
-    list-style:none;
-    position: absolute;
-    top:20%;
-    left:8%;
-    z-index:1;
-    
-}
-
-.nav_pat {
-    width:20%;
-    height:70%;
-    background-color: white;
-    opacity: 0.2;
-}
-
-.nav-links2 {
-    display: flex;
-    width:92%;
-    height:80%;
-    padding:0;
-    margin:0;
-
-    list-style:none;
-    position: absolute;
-    top:20%;
-    left:8%;
-    z-index:0;
-    
-    
-    
-}
-
-.nav-links2 li{
-    margin:0;
-    margin-right:21px;
-    margin-left:21px;
-    
-
-}
-
-.nav-links li{
-    margin:0;
-    margin-right:21px;
-    margin-left:21px;
-    cursor: pointer;
+@media all and (-webkit-min-device-pixel-ratio:0) and (min-resolution: .001dpcm) {
+    .footer_li1 { font-size:2.3vh; }
+    .footer_li2 { font-size:2.3vh; }
+    .footer_li3 { font-size:2.3vh; }
+    .footer_li4 { font-size:2.3vh; }
+    .footer_text { font-size:1.5vh;}
+    .left_text {font-size: 3vh;}
+    .left_text4 {font-size: 3vh;}
+    .left_text {font-size: 3vh;}
 }
 
 
 
-.nav_pic1 {
-    background-image: url(../IMG/home_origin.png);
-    width:20%;
-    height:70%;
-    background-size: cover;
-
-    
-}
-
-.nav_pic2 {
-    background-image: url(../IMG/about_origin.png);
-    width:20%;
-    height:70%;
-    background-size: cover;
-}
-
-.nav_pic3 {
-    background-image: url(../IMG/drinks_origin.png);
-    width:20%;
-    height:70%;
-    background-size: cover;
-}
-
-.nav_pic4 {
-    background-image: url(../IMG/contact_origin.png);
-    width:20%;
-    height:70%;
-    background-size: cover;
-}
-
-.nav-links2 li a{
-    position: relative;
-    top:85%;
-    left:5%;
-    z-index:2;
-
-    font-size:5.5vh;
-    font-family:"Gill Sans MT Bold";
-    text-shadow: black 0.1em 0.1em 0.1em;
-    letter-spacing: 2px;
-    color: white;
-}
 
 
 
