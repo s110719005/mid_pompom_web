@@ -479,8 +479,9 @@ body {
 
 .bottom_right_pic {
     height:50%;
-    position: relative;
+    position: absolute;
     top:0%;
+    right:0;
     z-index: -2;
 }
 .green{
