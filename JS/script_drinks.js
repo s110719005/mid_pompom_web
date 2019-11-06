@@ -33,7 +33,7 @@ tl2.from('.blue_wine', 2, {x:-200, opacity: 0,ease: Power4.easeInOut}, "=-2");
     tl3.to(".middle_right", .5, {opacity: 1})
 
 tl3.from('.red_text', 1.5, {x:-200, opacity: 0});
-tl3.from('.red_pic', 2, {x:200, opacity: 0}, "=-1.5");
+tl3.from('.red_pic', 2, {x:125, opacity: 0}, "=-1.5");
 tl3.from('.red_wine', 2, {opacity: 0,ease: Power4.easeInOut}, "=-2");
 
     tl4.from(".bottom_left", 1, {opacity: 0});
@@ -42,7 +42,7 @@ tl3.from('.red_wine', 2, {opacity: 0,ease: Power4.easeInOut}, "=-2");
     tl4.from(".bottom_right", 2, {opacity: 0});
     tl4.to(".bottom_right", .5, {opacity: 1})
 
-tl4.from('.green_text', 1.5, {x:200, opacity: 0});
+tl4.from('.green_text', 1.5, {x:150, opacity: 0});
 tl4.from('.green_pic', 2, {x:200, opacity: 0}, "=-1.5");
 tl4.from('.green_wine', 2, {x:-200, opacity: 0,ease: Power4.easeInOut}, "=-2");
 
